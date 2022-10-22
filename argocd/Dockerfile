@@ -10,7 +10,6 @@ RUN apt-get update \
     && curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key --keyring /usr/share/keyrings/cloud.google.gpg add - \
     && apt-get update \
     && apt-get install -y --no-install-recommends \
-    google-cloud-sdk-gke-gcloud-auth-plugin
-
+    google-cloud-sdk-gke-gcloud-auth-plugin google-cloud-cli
 
 USER argocd
