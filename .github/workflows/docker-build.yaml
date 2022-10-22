@@ -27,7 +27,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
-          username: container-images
+          username: cucxabong
           password: ${{ secrets.GITHUB_TOKEN }}
         if: ${{ steps.changes.outputs.changes != '[]' }}
 
@@ -36,5 +36,5 @@ jobs:
         with:
           context: argocd
           push: true
-          tags: ghcr.io/container-images/argocd:v2.4.15
+          tags: ghcr.io/cucxabong/argocd:v2.4.15
         if: ${{ steps.changes.outputs.argocd == 'true' }}
