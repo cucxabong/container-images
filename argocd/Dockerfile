@@ -12,4 +12,5 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     google-cloud-sdk-gke-gcloud-auth-plugin
 
+
 USER argocd
