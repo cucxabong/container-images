@@ -36,5 +36,5 @@ jobs:
         with:
           context: argocd
           push: true
-          tags: ghcr.io/cucxabong/argocd:v2.4.15
+          tags: ghcr.io/cucxabong/argocd:v2.6.1
         if: ${{ steps.changes.outputs.argocd == 'true' }}
